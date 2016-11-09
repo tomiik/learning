@@ -2,7 +2,8 @@ import LinkedListNode from "./linkedListNode"
 import LinkedList from "./linkedList"
 import findIntersectionLocation from "./findIntersectionLocation"
 import findCircular from "./findCircular"
-
+import Stack from "./stack"
+/*
 var list1 = new LinkedList();
 var list2 = new LinkedList();
 var n1 = new LinkedListNode(1);
@@ -60,3 +61,16 @@ console.log("list3");
 list3.print();
 n31.next = n32;
 console.log(findCircular(list3))
+*/
+
+var st = new Stack();
+var ll = new LinkedList();
+
+st.push(1);
+st.push(2);
+st.push(3);
+st.push(4);
+console.log(st.pop());
+console.log(st.pop());
+console.log(st.pop());
+console.log(st.pop());
