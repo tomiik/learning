@@ -3,6 +3,7 @@ import LinkedList from "./linkedList"
 import findIntersectionLocation from "./findIntersectionLocation"
 import findCircular from "./findCircular"
 import Stack from "./stack"
+import Queue from "./queue"
 /*
 var list1 = new LinkedList();
 var list2 = new LinkedList();
@@ -64,7 +65,6 @@ console.log(findCircular(list3))
 */
 
 var st = new Stack();
-var ll = new LinkedList();
 
 st.push(1);
 st.push(2);
@@ -74,3 +74,21 @@ console.log(st.pop());
 console.log(st.pop());
 console.log(st.pop());
 console.log(st.pop());
+
+var cue = new Queue();
+cue.queue(1);
+cue.queue(2);
+cue.queue(3);
+cue.queue(4);
+cue.queue(5);
+cue.queue(6);
+console.log(cue.dequeue());
+console.log(cue.dequeue());
+console.log(cue.dequeue());
+cue.queue(7);
+console.log(cue.dequeue());
+cue.queue(8);
+console.log(cue.dequeue());
+console.log(cue.dequeue());
+console.log(cue.dequeue());
+console.log(cue.dequeue());
